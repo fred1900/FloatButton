@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.test.floatbutton.widget.MyScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pageview"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:text="美味佳肴，大家一起哈起来"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/Navigation1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/main_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="0dp" >
+
+
+                    <RadioButton
+                        android:id="@+id/radioh_one"
+                        style="@style/homebutton_style"
+                        android:background="@drawable/btn_bg_homebanner"
+                        android:checked="true"
+                        android:padding="0dp"
+                        android:text="美味佳肴1"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioh_two"
+                        style="@style/homebutton_style"
+                        android:background="@drawable/btn_bg_homebanner"
+                        android:padding="0dp"
+                        android:text="美味佳肴2"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioh_three"
+                        style="@style/homebutton_style"
+                        android:background="@drawable/btn_bg_homebanner"
+                        android:padding="0dp"
+                        android:text="美味佳肴3"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioh_four"
+                        style="@style/homebutton_style"
+                        android:background="@drawable/btn_bg_homebanner"
+                        android:padding="0dp"
+                        android:text="美味佳肴4"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="美味佳肴1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.test.MyListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.test.MyListView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="美味佳肴2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.test.MyListView
+                android:id="@+id/listview2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.test.MyListView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="美味佳肴3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.test.MyListView
+                android:id="@+id/listview3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.test.MyListView>
+        </LinearLayout>
+    </com.test.floatbutton.widget.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/Navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <com.faizmalkani.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabbutton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:shadowColor="#000ff000"
+        app:drawable="@drawable/back_to_top"
+        app:color="#00000000" />
+
+</RelativeLayout>

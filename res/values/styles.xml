@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="homebutton_style">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">match_parent</item>
+       <item name="android:ellipsize">marquee</item>
+       <item name="android:gravity">center_horizontal|center_vertical</item>
+       <item name="android:layout_weight">1</item>
+       <item name="android:singleLine">true</item>
+       <item name="android:button">@null</item>
+    </style>
+	   <!--  popwindow -->
+</resources>

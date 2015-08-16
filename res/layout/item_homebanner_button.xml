@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="#ff3f75"
+        android:layout_gravity="top">
+        <RadioGroup
+            android:id="@+id/main_maintabhead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- android:background="@drawable/tab_bar_bg" -->
+
+            <RadioButton
+                android:id="@+id/radioh_one"
+                style="@style/homebutton_style"
+                android:checked="true"
+                android:padding="0dp"
+                android:text="秒杀"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_homebanner"/>
+
+            <RadioButton
+                android:id="@+id/radioh_two"
+                style="@style/homebutton_style"
+                android:text="限时特卖" 
+                android:padding="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_homebanner" />
+
+            <RadioButton
+                android:id="@+id/radioh_three"
+                style="@style/homebutton_style"
+                android:text="品牌团" 
+                android:padding="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_homebanner" />
+            <RadioButton
+                android:id="@+id/radioh_four"
+                style="@style/homebutton_style"
+                android:text="即将结束"
+                android:padding="0dp"
+                android:textSize="12sp" 
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_homebanner"/>
+            </RadioGroup>
+
+</LinearLayout>
